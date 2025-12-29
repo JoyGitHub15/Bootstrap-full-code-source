@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index17_Z-index</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <style>
+    .z-box {
+      width: 120px;
+      height: 120px;
+    }
+  </style>
+</head>
+<body class="bg-dark p-5">
+  
+  <div class="position-relative" style="height: 250px;">
+
+    <div class="z-3 position-absolute top-0 start-0 p-4 rounded-3 bg-primary text-white z-box">
+      z-3
+    </div>
+
+    <div class="z-2 position-absolute top-0 start-0 translate-middle-x translate-middle-y p-4 rounded-3 bg-info text-white z-box">
+      z-2
+    </div>
+
+    <div class="z-1 position-absolute top-0 start-0 ms-4 mt-4 p-4 rounded-3 bg-success text-white z-box">
+      z-1
+    </div>
+
+    <div class="z-0 position-absolute top-0 start-0 ms-5 mt-5 p-4 rounded-3 bg-warning text-dark z-box">
+      z-0
+    </div>
+
+    <div class="z-n1 position-absolute top-0 start-0 ms-6 mt-6 p-4 rounded-3 bg-secondary text-white z-box">
+      z-n1
+    </div>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
