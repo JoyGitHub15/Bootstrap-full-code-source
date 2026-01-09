@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index35_dropdown_menu</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    /* arrow animation */
+    .dropdown-toggle::after {
+      transition: transform 0.1s linear;
+    }
+
+    /* dropdown open হলে arrow উপরে যাবে */
+    .dropdown-toggle[aria-expanded="true"]::after {
+      transform: rotate(-180deg);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="dropend">
+
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Click Me</button>
+<ul class="dropdown-menu bg-secondary">
+  <li class="dropdown-item">Home</li>
+  <li class="dropdown-item">About</li>
+  <li> <hr class="dropdown-divider"></li>
+  <li class="dropdown-item">Contact</li>
+</ul>
+  </div>
+
+<br><br>
+
+
+
+
+<!-- make the form -->
+
+<br><br>
+
+<h1 class="text-primary mx-5" >Facebook</h1>
+<h2 class="text-align-center">Facebook helps you connect and share with the people in your life.</h2> <br><br>
+
+<div class=" d-flex justify-content-center align-items-center flex-column">
+
+
+ 
+  <form action=""class="px-4 py-3 w-75  bg-primary-subtle rounded-3 border border-primary-subtle mx-5 justify-content-center align-items-center d-flex flex-column  ">
+
+     <div class="mb-3 ">
+    <label for="dropdownemailaddress" class="form-label" >
+      Email address
+      <input  type="email"class="form-control" id="dropdownemailaddress"placeholder="email@example.com">
+    </label>
+  </div>
+
+  <div class="mb-3  ">
+    <label for="dropdownpassword" class="form-label">
+      Password
+      <input type="password" class="form-control"
+      id="dropdownpassword" placeholder="Password">
+    </label>
+
+  </div>
+  
+<div class="mb-3">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+          Remember me
+        </label>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary mb-2 w-75 ">Login</button>
+
+    <button type="button" class="btn btn-primary w-75">Sign in</button>
+    <button type="button" class="btn  mt-2"> <a class="dropdown-item" href="#">Forgot password?</a></button>
+
+  </form>
+
+  <!-- new dive -->
+
+ <div class=" bg-primary-subtle w-75 px-4 py-3 rounded-3 border border-ligt-subtle mx-5 justify-content-center align-items-center d-flex flex-column">
+
+
+   <div class="dropdown-divider"></div>
+
+ 
+<button type="button" class="btn btn-success">
+    <a class="dropdown-item" href="#">Create new account</a>
+</button>
+  
+ </div>
+
+</div>
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
