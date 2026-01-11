@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index37_modal</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  /* সব animated button এর জন্য */
+  .btn-animate {
+    transition: all 0.3s linear;
+  }
+
+  /* Hover করলে */
+  .btn-animate:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  }
+
+  /* Click করলে */
+  .btn-animate:active {
+    transform: scale(0.95);
+  }
+
+  /* Close button animation */
+  .close-animate {
+    transition: all 0.4s linear;
+  }
+
+  .close-animate:hover {
+    transform: rotate(90deg) scale(1.2);
+    background-color: #dc3545; /* danger */
+   
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- 1st Button -->
+  <button type="button" class="btn btn-primary  btn-animate ms-3 my-2" data-bs-toggle="modal" data-bs-target="#ExampleModal">Open Modal</button>
+
+  <!-- 1st Modal -->
+
+  <div class="modal fade" id="ExampleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+
+        <div class="modal-header" >
+          <h1 class="modal-title">Modal Title</h1>
+          <button type="button" class=" btn-close close-animate" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <button  type="button" class="btn btn-primary btn-animate" data-bs-target="#hello" data-bs-toggle="modal" > Click Me </button> Quisquam alias cupiditate expedita temporibus consectetur Click Me For Link <a href="https://github.com/JoyGitHub15/JavaScript-full-code-source" class=""  >Link</a> quibusdam nostrum impedit at magnam eum!</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger border border-2 border-danger rounded-3 btn-animate" data-bs-target="#ExampleModal" data-bs-dismiss="modal" >Close Page</button>
+
+          <button type="button" class="btn btn-success border border-2 border-success rounded-3 btn-animate"> Save Change</button>
+
+      </div>
+    </div>
+  </div>
+    </div>
+
+<!-- 2nd Modal -->
+
+  <div class=" modal fade" id="hello" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1> GitHub Account  </h1>
+        <button type="button" class=" btn-close close-animate"  data-bs-target="#hello" data-bs-dismiss="modal" aria-label="close"></button>
+</div>
+        <div class="modal-body">
+          <p>Open GitHub -><a href="https://github.com/JoyGitHub15/JavaScript-full-code-source"    >Link</a></p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger border border-2 border-danger rounded-3 btn-animate" data-bs-target="#hello" data-bs-dismiss="modal" >Close Page</button>
+
+           <button type="button" class="btn btn-outline-success border border-2 border-success rounded-3 btn-animate"> Save Change</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
